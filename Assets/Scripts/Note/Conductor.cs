@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,9 +19,15 @@ namespace RhythmGame
         [SerializeField] private AudioSource audioSource = null;
         [SerializeField] private Slider slider;
         public bool musicIsPlaying = false;
+        [SerializeField] GameObject gameOverCanva;
 
         private void Update()
         {
+            if (musicIsPlaying && audioSource.time >= audioSource.clip.length)
+            {
+                GameOver();
+            }
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 print("Switch");
@@ -41,6 +48,16 @@ namespace RhythmGame
                 float songProgress = audioSource.time / audioSource.clip.length;
                 slider.value = songProgress;
             }
+        }
+
+        private void GameOver()
+        {
+            //暫停遊戲時間
+            Time.timeScale = 0;
+            //顯示GameOver面板，並將鼠標顯現出來
+            gameOverCanva.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
 
         public void PlayMusic()

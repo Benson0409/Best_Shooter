@@ -29,7 +29,7 @@ namespace RhythmGame
 
             }
 
-            if (time - conductor.SongPositionTime <= -3)
+            if (time - conductor.SongPositionTime <= -1.5)
             {
                 Destroy(gameObject);
             }
