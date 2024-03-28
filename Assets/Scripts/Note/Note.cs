@@ -24,7 +24,9 @@ namespace RhythmGame
                 if (math.abs(conductor.SongPositionTime - time) < 0.5)
                 {
                     gameObject.transform.GetChild(0).gameObject.layer = LayerMask.NameToLayer("Default");
+                    gameObject.transform.GetChild(0).gameObject.tag = "Note";
                     gameObject.layer = LayerMask.NameToLayer("Default");
+                    gameObject.tag = "Note";
                 }
 
             }
