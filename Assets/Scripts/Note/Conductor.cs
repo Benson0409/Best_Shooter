@@ -21,9 +21,9 @@ namespace RhythmGame
 
         private void Update()
         {
-
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                print("Switch");
                 if (!musicIsPlaying)
                 {
                     PlayMusic();

@@ -15,8 +15,6 @@ namespace RhythmGame
 
 
 
-
-
         public NoteData noteData = null;
 
         private void Awake()
@@ -24,35 +22,25 @@ namespace RhythmGame
             SpawnAllNotes();
 
         }
-
         //讓節點隨者音樂來進行生成
         public void SpawnAllNotes()
         {
             foreach (float f in noteData.trackData)
             {
-
-                // 獲取物體的尺寸
-                float objectWidth = range.position.x;
-                float objectHeight = range.position.y;
-                float objectDepth = range.position.z;
-
-                // 根據物體的尺寸定義生成範圍的大小
-                Vector3 spawnRange = new Vector3(objectWidth * 2, objectHeight * 2, objectDepth * 2);
-
-                // 在範圍內隨機選擇一個位置
-                Vector3 spawnPosition = transform.position + new Vector3(
-                    Random.Range(-spawnRange.x / 2, spawnRange.x / 2),
-                 Random.Range(-spawnRange.y / 2, spawnRange.y / 2),
-                    Random.Range(-spawnRange.z / 2, spawnRange.z / 2)
-                );
                 //生成位置用物體的範圍的隨機位置
+                // 在範圍內隨機選擇一個位置
+                Vector3 spawnPosition = new Vector3(Random.Range(-9f, 9f), Random.Range(0.2f, 6f), 1.9f);
+
+                // 生成音符並指定位置和旋轉
                 Note note = Instantiate(notePrefab, spawnPosition, Quaternion.identity);
+                note.transform.rotation = Quaternion.Euler(270f, 0f, 0f);
                 note.time = f;
                 note.conductor = conductor;
                 playerController.conductor = conductor;
             }
 
-
         }
+
+
     }
 }
