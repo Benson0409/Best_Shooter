@@ -25,6 +25,11 @@ namespace RhythmGame
         //讓節點隨者音樂來進行生成
         public void SpawnAllNotes()
         {
+            // kill all notes before spawn
+            GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("cloneNote");
+            foreach (GameObject o in gameObjects)
+                GameObject.Destroy(o);
+
             foreach (float f in noteData.trackData)
             {
                 //生成位置用物體的範圍的隨機位置

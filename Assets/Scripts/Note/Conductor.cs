@@ -30,6 +30,7 @@ namespace RhythmGame
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                GameObject.Find("SensitivityQuad").SetActive(false);
                 print("Switch");
                 if (!musicIsPlaying)
                 {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -167,7 +167,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 87e23b1d3608a438db4ce5b6973039a1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ea418456e97477746baaaa9f0e2d1cb3, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.4
   m_Pitch: 1
@@ -863,9 +863,9 @@ Transform:
   m_GameObject: {fileID: 211796722}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.32, y: 111.9, z: -505.36}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -13.32, y: 110.9, z: -505.36}
+  m_LocalScale: {x: 8, y: 8, z: 3.2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 865035505}
   m_Father: {fileID: 1079423915}
@@ -1123,7 +1123,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 657b7aca4ced7164fb6022edf53d8b52, type: 2}
+  - {fileID: 2100000, guid: d3ee205c775b84b4583dba35a9ff5ac1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1832,6 +1832,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97cd563142fe4ee448cdb65d41c28798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  song1: {fileID: 2100000, guid: 657b7aca4ced7164fb6022edf53d8b52, type: 2}
+  song2: {fileID: 2100000, guid: 196015294fd3fc749a4d4118f5840bb4, type: 2}
+  song3: {fileID: 2100000, guid: 096ad7d811653b945b6ba9938bc2ed89, type: 2}
+  song4: {fileID: 2100000, guid: c06aaf81538794f4e98f71ad46078361, type: 2}
+  song5: {fileID: 2100000, guid: 24250ba77903ada478c4390bb8d8532a, type: 2}
+  song6: {fileID: 2100000, guid: 5762a3bbf52449245aa17a3c99c27a2b, type: 2}
+  wall1: {fileID: 1404897064}
+  wall2: {fileID: 2077071398}
+  wall3: {fileID: 1882761750}
+  wall4: {fileID: 1913843075}
+  wall5: {fileID: 278869221}
+  dataManager: {fileID: 1821848191}
+  audio1: {fileID: 8300000, guid: 87e23b1d3608a438db4ce5b6973039a1, type: 3}
+  audio2: {fileID: 8300000, guid: 736d763f22f371449a0aec280d9d1d37, type: 3}
+  audio3: {fileID: 8300000, guid: ea418456e97477746baaaa9f0e2d1cb3, type: 3}
+  audio4: {fileID: 8300000, guid: 3b69a9b584abd39418cc8624650d006d, type: 3}
+  audio5: {fileID: 8300000, guid: f389a98d3802de745bf5d8cc43ebbdb9, type: 3}
+  audio6: {fileID: 8300000, guid: d391d3a306b3e254fa1473b62d978a75, type: 3}
+  conductor: {fileID: 7164272}
+  noteSpawner: {fileID: 2041046425}
 --- !u!1 &870287179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2580,7 +2600,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 657b7aca4ced7164fb6022edf53d8b52, type: 2}
+  - {fileID: 2100000, guid: d3ee205c775b84b4583dba35a9ff5ac1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3453,8 +3473,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteSpawner: {fileID: 2041046425}
   noteController: {fileID: 881608195}
-  savePath: /Users/benson0409/Unity/Beat Shooter/Best_Shooter/Data
-  fileName: NoteData.txt
+  savePath: C:/Users/BunnyK/Documents/GitHub/Best_Shooter/Data
+  fileName: NoteData3.txt
 --- !u!4 &1821848193
 Transform:
   m_ObjectHideFlags: 0
@@ -3665,7 +3685,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 657b7aca4ced7164fb6022edf53d8b52, type: 2}
+  - {fileID: 2100000, guid: d3ee205c775b84b4583dba35a9ff5ac1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3803,7 +3823,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 657b7aca4ced7164fb6022edf53d8b52, type: 2}
+  - {fileID: 2100000, guid: d3ee205c775b84b4583dba35a9ff5ac1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3980,67 +4000,157 @@ MonoBehaviour:
   range: {fileID: 2077071399}
   noteData:
     trackData:
-    - 1.322653
-    - 2.5173242
-    - 3.6053288
-    - 4.5653286
-    - 5.802653
-    - 6.7413154
-    - 7.82932
-    - 8.874648
-    - 10.026644
-    - 11.114649
-    - 12.095986
-    - 13.141315
-    - 14.1013155
-    - 15.274649
-    - 16.298662
-    - 17.173311
-    - 18.431995
-    - 19.541315
-    - 20.607983
-    - 21.52533
-    - 22.591995
-    - 23.722652
-    - 24.746643
-    - 25.877325
-    - 26.94399
-    - 29.055986
-    - 29.631996
-    - 30.165329
-    - 30.698662
-    - 32.277325
-    - 33.322655
-    - 34.282654
-    - 35.477325
-    - 36.01066
-    - 36.799976
-    - 37.56798
-    - 38.314648
-    - 39.039978
-    - 39.701317
-    - 40.490658
-    - 41.621315
-    - 42.282654
-    - 42.901314
-    - 43.882652
-    - 44.650658
-    - 45.58932
-    - 46.677322
-    - 48.106644
-    - 48.959976
-    - 50.090656
-    - 50.751995
-    - 52.351994
-    - 53.375988
-    - 54.52798
-    - 55.59465
-    - 57.19465
-    - 58.218662
-    - 59.541317
-    - 60.778664
-    - 61.866646
-    - 62.93331
+    - 1.2373333
+    - 2.304
+    - 3.2
+    - 3.968
+    - 4.9066668
+    - 5.653333
+    - 6.4
+    - 7.2106667
+    - 8.042666
+    - 8.810667
+    - 9.685333
+    - 10.282666
+    - 11.242666
+    - 11.968
+    - 12.650666
+    - 13.653334
+    - 14.485333
+    - 15.210667
+    - 15.936
+    - 16.938667
+    - 17.749332
+    - 18.496
+    - 19.285334
+    - 20.181334
+    - 21.013334
+    - 21.802668
+    - 22.698668
+    - 23.466667
+    - 24.234667
+    - 25.130667
+    - 25.962667
+    - 26.901333
+    - 27.52
+    - 28.458666
+    - 29.248
+    - 29.973333
+    - 30.72
+    - 31.530666
+    - 32.256
+    - 33.130665
+    - 33.92
+    - 34.70933
+    - 35.477333
+    - 36.330666
+    - 37.162666
+    - 37.909332
+    - 38.762665
+    - 39.68
+    - 40.469334
+    - 41.173332
+    - 41.941334
+    - 42.837334
+    - 43.626667
+    - 44.309334
+    - 45.013332
+    - 46.016
+    - 46.848
+    - 47.68
+    - 48.490665
+    - 49.258667
+    - 50.02667
+    - 50.752
+    - 51.541332
+    - 52.394665
+    - 53.333332
+    - 54.272
+    - 55.08267
+    - 55.872
+    - 56.704
+    - 57.472
+    - 58.24
+    - 58.986668
+    - 59.861332
+    - 60.608
+    - 61.312
+    - 62.336
+    - 63.146667
+    - 63.850666
+    - 64.512
+    - 65.194664
+    - 66.00533
+    - 66.73067
+    - 67.56267
+    - 68.736
+    - 69.58933
+    - 70.35733
+    - 70.99733
+    - 72.02133
+    - 72.68266
+    - 73.64267
+    - 74.496
+    - 75.456
+    - 76.224
+    - 76.928
+    - 77.696
+    - 78.54933
+    - 79.232
+    - 80
+    - 80.746666
+    - 81.42934
+    - 82.45333
+    - 83.349335
+    - 84.181335
+    - 85.03467
+    - 85.781334
+    - 86.528
+    - 87.33867
+    - 88.234665
+    - 89.066666
+    - 89.856
+    - 90.666664
+    - 91.584
+    - 92.330666
+    - 93.07733
+    - 93.86667
+    - 94.805336
+    - 95.552
+    - 96.32
+    - 97.152
+    - 98.048
+    - 98.83733
+    - 99.669334
+    - 100.37334
+    - 101.12
+    - 101.930664
+    - 102.805336
+    - 103.616
+    - 104.49067
+    - 105.344
+    - 106.13333
+    - 106.986664
+    - 107.776
+    - 108.56533
+    - 109.312
+    - 110.10133
+    - 110.912
+    - 111.78667
+    - 112.405334
+    - 113.10934
+    - 114.112
+    - 114.88
+    - 115.62666
+    - 116.24533
+    - 117.39733
+    - 118.208
+    - 119.01867
+    - 119.722664
+    - 120.746666
+    - 121.64267
+    - 122.346664
+    - 124.010666
 --- !u!4 &2041046426
 Transform:
   m_ObjectHideFlags: 0
@@ -4132,7 +4242,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 657b7aca4ced7164fb6022edf53d8b52, type: 2}
+  - {fileID: 2100000, guid: d3ee205c775b84b4583dba35a9ff5ac1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

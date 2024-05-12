@@ -32,5 +32,10 @@ namespace RhythmGame
             NoteData noteData = JsonUtility.FromJson<NoteData>(loadData);
             noteSpawner.noteData = noteData;
         }
+
+        public void changeFileName(string inputFileName)
+        {
+            fileName = inputFileName;
+        }
     }
 }

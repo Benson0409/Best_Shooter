@@ -1,8 +1,19 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/StyleSheet.uss?fileID=7433441132597879392&amp;guid=9c9247b33876b124a84b364caa1d151c&amp;type=3#StyleSheet" />
-    <ui:VisualElement style="flex-grow: 1; position: absolute; left: auto; bottom: 0; flex-direction: row; align-items: center; justify-content: center; align-self: center; width: 436px; right: auto; flex-basis: auto;">
-        <ui:Button text="-" parse-escape-sequences="true" display-tooltip-when-elided="true" name="low" class="button" />
-        <ui:Label tabindex="-1" text="3.00" parse-escape-sequences="true" display-tooltip-when-elided="true" name="sen" style="width: 100px; -unity-text-align: upper-center; color: rgb(255, 255, 255); font-size: 20px;" />
-        <ui:Button text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="up" class="button" />
+    <ui:VisualElement style="flex-grow: 1; align-items: center;">
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: center; align-items: center; align-self: center; height: 0;">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="rickroll" class="songSelect" style="background-image: url(&apos;project://database/Assets/Meme/rick.jpeg?fileID=2800000&amp;guid=62786effb3b7ddc4a95f58dc60e87a95&amp;type=3#rick&apos;);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="rushe" class="songSelect" style="background-image: url(&apos;project://database/Assets/Meme/E.jpg?fileID=2800000&amp;guid=0d8e9252695748645aba4d832fc7d6a9&amp;type=3#E&apos;);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="wii" class="songSelect" style="background-image: url(&apos;project://database/Assets/Meme/wiishop.jpg?fileID=2800000&amp;guid=ac2f8c7f3a8ed424d998965eab83d0a2&amp;type=3#wiishop&apos;);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="tfboys" class="songSelect" style="background-image: url(&apos;project://database/Assets/Meme/tfboys.jpg?fileID=2800000&amp;guid=69fe6e88bca600f4885fb45a04e2b162&amp;type=3#tfboys&apos;);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="minecraft" class="songSelect" style="background-image: url(&apos;project://database/Assets/Meme/minecraft.jpg?fileID=2800000&amp;guid=762eb38076188b6438c5106bca57c350&amp;type=3#minecraft&apos;);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cat" class="songSelect" style="background-image: url(&apos;project://database/Assets/Meme/chipi.jpg?fileID=2800000&amp;guid=6e49159c85ecd9a4ba13000e66cf149b&amp;type=3#chipi&apos;);" />
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="按空白鍵開始遊玩" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 16px; -unity-font-style: bold;" />
+        <ui:VisualElement style="flex-grow: 1; position: relative; left: auto; bottom: 0; flex-direction: row; align-items: flex-start; justify-content: center; align-self: center; width: auto; right: auto; flex-basis: auto; height: auto; flex-wrap: nowrap;">
+            <ui:Button text="-" parse-escape-sequences="true" display-tooltip-when-elided="true" name="low" class="button" style="align-items: auto;" />
+            <ui:Label tabindex="-1" text="3.00" parse-escape-sequences="true" display-tooltip-when-elided="true" name="sen" style="width: 100px; -unity-text-align: upper-center; color: rgb(255, 255, 255); font-size: 24px;" />
+            <ui:Button text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="up" class="button" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
