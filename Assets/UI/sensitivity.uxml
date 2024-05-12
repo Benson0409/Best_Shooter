@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StyleSheet.uss?fileID=7433441132597879392&amp;guid=9c9247b33876b124a84b364caa1d151c&amp;type=3#StyleSheet" />
+    <ui:VisualElement style="flex-grow: 1; position: absolute; left: auto; bottom: 0; flex-direction: row; align-items: center; justify-content: center; align-self: center; width: 436px; right: auto; flex-basis: auto;">
+        <ui:Button text="-" parse-escape-sequences="true" display-tooltip-when-elided="true" name="low" class="button" />
+        <ui:Label tabindex="-1" text="3.00" parse-escape-sequences="true" display-tooltip-when-elided="true" name="sen" style="width: 100px; -unity-text-align: upper-center; color: rgb(255, 255, 255); font-size: 20px;" />
+        <ui:Button text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="up" class="button" />
+    </ui:VisualElement>
+</ui:UXML>
