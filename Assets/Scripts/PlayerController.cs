@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Mathematics;
 using TMPro;
 
 namespace RhythmGame
@@ -13,6 +14,10 @@ namespace RhythmGame
         public NoteSpawner noteSpawner;
         private int score = 0;
 
+        public GameObject perfectNote;
+        public GameObject greatNote;
+        public GameObject goodNote;
+
         void Update()
         {
             scoreText.text = score.ToString();
@@ -21,20 +26,30 @@ namespace RhythmGame
         public void HitNote(GameObject obj)
         {
             Note note = obj.GetComponent<Note>();
-            if (conductor.SongPositionTime - note.time < 0.4f)
+
+            if (math.abs(conductor.SongPositionTime - note.time) < 0.2f)
             {
-                print("Great");
+                print(conductor.SongPositionTime - note.time);
+                print("Perfect!!");
                 score += 5;
+
+                Instantiate(perfectNote, note.GetComponent<Transform>().position, Quaternion.identity);
             }
-            else if (conductor.SongPositionTime - note.time < 0.7f)
+            else if (math.abs(conductor.SongPositionTime - note.time) < 0.4f)
             {
-                print("Good");
+                print(conductor.SongPositionTime - note.time);
+                print("Great!");
                 score += 3;
+
+                Instantiate(greatNote, note.GetComponent<Transform>().position, Quaternion.identity);
             }
             else
             {
-                print("none");
+                print(conductor.SongPositionTime - note.time);
+                print("Good");
                 score += 1;
+
+                Instantiate(goodNote, note.GetComponent<Transform>().position, Quaternion.identity);
             }
             Destroy(obj);
         }

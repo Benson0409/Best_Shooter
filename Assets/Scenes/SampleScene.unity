@@ -2116,6 +2116,12 @@ MonoBehaviour:
   scoreText: {fileID: 1575938398}
   conductor: {fileID: 7164273}
   noteSpawner: {fileID: 2041046425}
+  perfectNote: {fileID: 6230801053428531895, guid: e1b4d1b1543f981418c6c58d3edab23d,
+    type: 3}
+  greatNote: {fileID: 2460862609503570447, guid: cd4ffbc52a9371747be2a766e335e990,
+    type: 3}
+  goodNote: {fileID: 3976605314755046650, guid: 063f55f8b32bf964398ab67e83afa4fe,
+    type: 3}
 --- !u!1 &1041736491
 GameObject:
   m_ObjectHideFlags: 0
@@ -3473,7 +3479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteSpawner: {fileID: 2041046425}
   noteController: {fileID: 881608195}
-  savePath: C:/Users/BunnyK/Documents/GitHub/Best_Shooter/Data
+  savePath: C:/Users/user/Documents/GitHub/Best_Shooter/Data
   fileName: NoteData3.txt
 --- !u!4 &1821848193
 Transform:

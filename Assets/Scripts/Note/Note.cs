@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 
 
@@ -12,6 +11,8 @@ namespace RhythmGame
         public float time;
         public float speed;
 
+        bool startedShowing = false;
+
         public Conductor conductor = null;
         //他會全部生成，要想辦法讓他音樂下之後再開始判斷是否要顯示
 
@@ -21,8 +22,13 @@ namespace RhythmGame
             //更改layer的層級
             if (conductor.musicIsPlaying)
             {
-                if (math.abs(conductor.SongPositionTime - time) < 0.5)
+                if ((time - conductor.SongPositionTime) < 1f)
                 {
+                    float fadeAmount = (time - conductor.SongPositionTime);
+                    Color color = gameObject.GetComponent<MeshRenderer>().material.color;
+                    color = Color.Lerp(Color.red, Color.blue, fadeAmount);
+                    gameObject.GetComponent<MeshRenderer>().material.color = color;
+
                     gameObject.transform.GetChild(0).gameObject.layer = LayerMask.NameToLayer("Default");
                     gameObject.transform.GetChild(0).gameObject.tag = "Note";
                     gameObject.layer = LayerMask.NameToLayer("Default");
@@ -31,7 +37,7 @@ namespace RhythmGame
 
             }
 
-            if (time - conductor.SongPositionTime <= -1.5)
+            if (time - conductor.SongPositionTime <= -0.5f)
             {
                 Destroy(gameObject);
             }
